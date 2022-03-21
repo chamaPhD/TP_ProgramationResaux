@@ -29,6 +29,8 @@ public class ServeurMT extends Thread {
 			while(isActive) {
 				
 				System.out.println("Waiting for new Clients !!");
+				System.out.println("Test Branch !!");
+
 				Socket socket = serverSocket.accept();
 				++numClient;
 				new Conversation(socket,numClient).start();
